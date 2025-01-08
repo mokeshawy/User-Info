@@ -69,7 +69,6 @@ kotlinxSerializationJson = "1.6.3"
 koinAndroid = "3.4.0"
 
 hiltAndroid = "2.52"
-hiltAndroidCompiler = "2.48.1"
 hiltNavigationCompose = "1.2.0"
 
 [libraries]
@@ -183,7 +182,7 @@ koin-android = { module = "io.insert-koin:koin-androidx-compose", version.ref = 
 # Hilt
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
 
 # Retrofit
 gson = { module = 'com.google.code.gson:gson', version.ref = 'gson' }
