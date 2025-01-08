@@ -6,11 +6,17 @@ plugins {
     alias(libs.plugins.mapsplatform.secrets.gradle.plugin)
     alias(libs.plugins.google.services)
     alias(libs.plugins.firebase.crashlytics)
+    alias(libs.plugins.hilt.plugin)
 }
 
 android {
     namespace = "com.tawuniya.userinfo"
     compileSdk = 35
+
+
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "com.tawuniya.userinfo"
