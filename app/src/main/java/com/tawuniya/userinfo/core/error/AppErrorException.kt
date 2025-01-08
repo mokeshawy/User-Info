@@ -23,4 +23,13 @@ class ResponseUnAuthorizedException(message: String? = null, cause: Throwable? =
     AppErrorException(message, cause)
 
 
+@Keep
+class FiledToOpenWhatsAppException(message: String? = null, cause: Throwable? = null) :
+    AppErrorException(message, cause)
+
+
+@Keep
+class FiledToOpenGoogleMapsException(message: String? = null, cause: Throwable? = null) :
+    AppErrorException(message, cause)
+
 
