@@ -1,6 +1,6 @@
 package com.tawuniya.userinfo.core.bases.base_repository
 
-import com.holouly.holoulyapp.core.state.State
+import com.tawuniya.userinfo.core.state.State
 import com.tawuniya.userinfo.core.error.AppError
 import com.tawuniya.userinfo.core.error.GeneralException
 import com.tawuniya.userinfo.core.error.IoException
