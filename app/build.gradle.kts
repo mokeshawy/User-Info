@@ -139,6 +139,12 @@ dependencies {
     implementation(libs.bundles.ktor.bundle)
 
 
+    //Retrofit
+    implementation(libs.gson)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+
+
     // logging - interceptor
     implementation(libs.logging.interceptor)
 
