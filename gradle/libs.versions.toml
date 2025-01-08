@@ -1,0 +1,237 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.12.01"
+
+mapsplatform-secrets-gradle-plugin = "2.0.1"
+
+easylauncher = "6.2.0"
+
+firebase-analytics-ktx = "22.1.2"
+firebase-bom = "33.7.0"
+firebase-config-ktx = "22.0.1"
+firebase-crashlytics-project-gradle = "3.0.2"
+firebase-crashlytics-ktx = "19.3.0"
+firebase-installations-ktx = "18.0.0"
+firebase-inappmessaging-display-ktx = "21.0.1"
+firebase-inappmessaging-ktx = "21.0.1"
+firebase-messaging-ktx = "24.1.0"
+firebase-perf-ktx = "21.0.3"
+firebase-perf-plugin = "1.4.2"
+
+google-services = "4.4.2"
+
+lifecycle-viewmodel-compose = "2.8.7"
+
+logging-interceptor = "4.12.0"
+navigation-compose = "2.8.5"
+
+maps-compose = "2.15.0"
+
+places = "4.1.0"
+play-services-location = "21.3.0"
+play-services-maps = "19.0.0"
+play-services-places = "17.1.0"
+
+
+
+process-phoenix = "3.0.0"
+
+timber = "5.0.1"
+
+noop = "1.1.0"
+debugger = "1.1.2"
+
+app-update = "2.1.0"
+
+coil = "2.7.0"
+
+paging-compose = "3.3.5"
+paging-runtime-ktx = "3.3.5"
+
+lottie-compose = "6.0.1"
+
+security-crypto = "1.1.0-alpha06"
+
+constraintlayout-compose = "1.1.0"
+
+ktorVersion = "2.3.5"
+
+kotlinxSerializationJson = "1.6.3"
+
+koinAndroid = "3.4.0"
+
+hiltAndroid = "2.52"
+hiltAndroidCompiler = "2.48.1"
+hiltNavigationCompose = "1.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+
+
+# lifecycle viewmodel compose
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
+
+# navigation compose
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+
+# easylauncher
+easylauncher = { module = "com.project.starter:easylauncher", version.ref = "easylauncher" }
+
+# firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx", version.ref = "firebase-analytics-ktx" }
+firebase-config-ktx = { module = "com.google.firebase:firebase-config-ktx", version.ref = "firebase-config-ktx" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx", version.ref = "firebase-crashlytics-ktx" }
+firebase-installations-ktx = { module = "com.google.firebase:firebase-installations-ktx", version.ref = "firebase-installations-ktx" }
+firebase-inappmessaging-display-ktx = { module = "com.google.firebase:firebase-inappmessaging-display-ktx", version.ref = "firebase-inappmessaging-display-ktx" }
+firebase-inappmessaging-ktx = { module = "com.google.firebase:firebase-inappmessaging-ktx", version.ref = "firebase-inappmessaging-ktx" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx", version.ref = "firebase-messaging-ktx" }
+firebase-perf-ktx = { module = "com.google.firebase:firebase-perf-ktx", version.ref = "firebase-perf-ktx" }
+
+# firebase plugin
+firebase-perf-plugin = { module = "com.google.firebase:perf-plugin", version.ref = "firebase-perf-plugin" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebase-crashlytics-project-gradle" }
+
+# google services
+google-services = { module = "com.google.gms:google-services", version.ref = "google-services" }
+
+
+# maps
+places = { module = "com.google.android.libraries.places:places", version.ref = "places" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "play-services-location" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "play-services-maps" }
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "maps-compose" }
+play-services-places = { module = "com.google.android.gms:play-services-places", version.ref = "play-services-places" }
+
+
+# logging interceptor
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "logging-interceptor" }
+
+# process phoenix
+process-phoenix = { module = "com.jakewharton:process-phoenix", version.ref = "process-phoenix" }
+
+# timber
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+# remote deuger
+noop = { module = "com.github.zerobranch.android-remote-debugger:noop", version.ref = "noop" }
+debugger = { module = "com.github.zerobranch.android-remote-debugger:debugger", version.ref = "debugger" }
+
+# app update
+app-update = { module = "com.google.android.play:app-update", version.ref = "app-update" }
+app-update-ktx = { module = "com.google.android.play:app-update-ktx", version.ref = "app-update" }
+
+# coil
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+
+# compose paging3
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging-compose" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "paging-runtime-ktx" }
+
+# lottie compose
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }
+
+# encrypted shared preferenc
+androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "security-crypto" }
+
+# constraintlayout
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
+
+# ktor
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorVersion" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorVersion" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorVersion" }
+ktor-client-gson = { module = "io.ktor:ktor-client-gson", version.ref = "ktorVersion" }
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktorVersion" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorVersion" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorVersion" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktorVersion" }
+ktor-serialization-gson = { module = "io.ktor:ktor-serialization-gson", version.ref = "ktorVersion" }
+
+# Ktor serialization
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktorVersion" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorVersion" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorVersion" }
+
+# Koin
+koin-android = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroid" }
+
+# Hilt
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+
+[bundles]
+
+# firebase bundle
+firebase-bundle = [
+    "firebase-analytics-ktx",
+    "firebase-config-ktx",
+    "firebase-crashlytics-ktx",
+    "firebase-installations-ktx",
+    "firebase-inappmessaging-display-ktx",
+    "firebase-inappmessaging-ktx",
+    "firebase-messaging-ktx",
+    "firebase-perf-ktx"
+]
+
+# ktor bundle
+ktor-bundle = [
+    "ktor-client-core",
+    "ktor-client-android",
+    "ktor-client-cio",
+    "ktor-client-gson",
+    "ktor-client-json",
+    "ktor-client-logging",
+    "ktor-client-okhttp",
+    "ktor-client-websockets",
+    "ktor-serialization-gson",
+    "kotlinx-serialization-json",
+    "ktor-client-serialization",
+    "ktor-client-content-negotiation",
+    "ktor-serialization-kotlinx-json"
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+# kotlin kapt
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+
+# mapsplatform secrets gradle plugin
+mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsplatform-secrets-gradle-plugin" }
+
+# google-services
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
+
+# firebase crashlytics
+firebase-crashlytics = { id = "com.google.firebase.crashlytics" , version.ref = "firebase-crashlytics-project-gradle"}
+
+# Hilt
+hilt-plugin = { id = "com.google.dagger.hilt.android" , version.ref = "hiltAndroid"}
+
