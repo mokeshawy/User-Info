@@ -13,6 +13,7 @@ import com.tawuniya.userinfo.R
 import com.tawuniya.userinfo.composable.GeneralError
 import com.tawuniya.userinfo.composable.MainTopBar
 import com.tawuniya.userinfo.features.common.components.UserInfoItem
+import com.tawuniya.userinfo.features.common.domain.model.ui.UserInfoEntitiesUiModel
 import com.tawuniya.userinfo.features.favorite.domain.viewmodel.FavoriteViewModel
 import com.tawuniya.userinfo.features.home.domain.model.ui.UserInfoUiModel
 import com.tawuniya.userinfo.features.home.domain.viewmodel.HomeViewModel
@@ -25,6 +26,7 @@ fun HomeScreen(
     onNavigateToFavorite: () -> Unit
 ) {
     val userInfoUiState = viewModel.uiState
+    val favoriteUiState = favoriteViewModel.uiState
 
     MainTopBar(
         isShowRightIcon = true,
@@ -44,14 +46,12 @@ fun HomeScreen(
         if (userInfoUiState.userInfoUiModelList?.isNotEmpty() == true) {
             HomeContent(
                 userInfoUiModel = userInfoUiState.userInfoUiModelList,
+                userInfoEntitiesUiModel = favoriteUiState.userInfoEntitiesUiModel ?: emptyList(),
                 onFavoriteClicked = { isFavorite, userInfoUiModel ->
-                    when (isFavorite) {
-                        true -> favoriteViewModel.sendAddUserInfoToFavoriteIntent(
-                            userInfoUiModel = userInfoUiModel,
-                            isFavorite = true
-                        )
-                        false -> {}
-                    }
+                    favoriteViewModel.handleFavoriteUnFavoriteItem(
+                        isFavorite = isFavorite,
+                        userInfoUiModel = userInfoUiModel
+                    )
                 })
         }
     }
@@ -61,6 +61,7 @@ fun HomeScreen(
 @Composable
 fun HomeContent(
     userInfoUiModel: List<UserInfoUiModel>,
+    userInfoEntitiesUiModel: List<UserInfoEntitiesUiModel>,
     onFavoriteClicked: (Boolean, UserInfoUiModel) -> Unit,
 ) {
     LazyColumn(
@@ -78,7 +79,8 @@ fun HomeContent(
                 website = item.website,
                 lat = item.address.geofence.lat.toDouble(),
                 lng = item.address.geofence.lng.toDouble(),
-                isFavorite = item.isFavorite,
+                isFavorite = userInfoEntitiesUiModel.filter { item.id == it.id }
+                    .map { it.isFavorite }.firstOrNull() ?: false,
                 onFavoriteClicked = {
                     onFavoriteClicked(it, item)
                 },

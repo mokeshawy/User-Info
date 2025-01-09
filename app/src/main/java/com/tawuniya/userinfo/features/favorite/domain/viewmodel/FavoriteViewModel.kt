@@ -24,14 +24,20 @@ class FavoriteViewModel @Inject constructor(
         sendGetUserInfoEntitiesIntent()
     }
 
+    fun handleFavoriteUnFavoriteItem(isFavorite: Boolean, userInfoUiModel: UserInfoUiModel) {
+        when (isFavorite) {
+            true -> sendAddUserInfoToFavoriteIntent(userInfoUiModel = userInfoUiModel)
+            false -> sendUnFavoriteIntent(id = userInfoUiModel.id)
+        }
+    }
+
     fun sendGetUserInfoEntitiesIntent() = sendIntent(FavoriteIntent.GetUserInfoEntities)
 
-    fun sendAddUserInfoToFavoriteIntent(
+    private fun sendAddUserInfoToFavoriteIntent(
         userInfoUiModel: UserInfoUiModel,
-        isFavorite: Boolean
     ) = sendIntent(
         FavoriteIntent.AddToFavorite(
-            userInfoUiModel = userInfoUiModel, isFavorite = isFavorite
+            userInfoUiModel = userInfoUiModel, isFavorite = true
         )
     )
 
