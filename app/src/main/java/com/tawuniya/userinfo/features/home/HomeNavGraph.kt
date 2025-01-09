@@ -5,6 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.navDeepLink
+import com.tawuniya.userinfo.features.favorite.navigateToFavorite
 import com.tawuniya.userinfo.features.home.presentation.HomeScreen
 import com.tawuniya.userinfo.features.root.ROOT_DEEPLINK
 
@@ -22,7 +23,7 @@ fun NavGraphBuilder.homeGraph(navController: NavController) {
     ) {
 
         composable(route = HOME_ROUTE) {
-            HomeScreen()
+            HomeScreen(onNavigateToFavorite = navController::navigateToFavorite)
         }
     }
 }

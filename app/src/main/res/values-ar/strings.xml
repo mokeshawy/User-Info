@@ -14,5 +14,6 @@
     <string name="webSite">الموقع الالكترونى:</string>
     <string name="email">الايميل:</string>
     <string name="home">الرئسيه</string>
+    <string name="favorite">المفضله</string>
 
 </resources>
