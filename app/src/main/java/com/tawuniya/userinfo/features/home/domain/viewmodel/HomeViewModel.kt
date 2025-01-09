@@ -19,11 +19,11 @@ class HomeViewModel @Inject constructor(
         sendGetUserInfoIntent()
     }
 
-    private fun sendGetUserInfoIntent() = sendIntent(HomeIntent.GetHome)
+    fun sendGetUserInfoIntent() = sendIntent(HomeIntent.GetUserInfo)
 
     override fun processIntent(intent: HomeIntent) {
         when (intent) {
-            HomeIntent.GetHome -> reduceUserinfoUiState()
+            HomeIntent.GetUserInfo -> reduceUserinfoUiState()
         }
     }
 

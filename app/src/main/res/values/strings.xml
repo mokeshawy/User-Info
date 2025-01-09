@@ -3,5 +3,16 @@
 
     <string name="failedOpenWhatsApp">Failed to open Whatsapp</string>
     <string name="failedOpenGoogleMaps">Failed to open google map</string>
+    <string name="something_went_wrong">something went wrong</string>
+    <string name="noInternetConnection">No internet connection</string>
+    <string name="tapToLoadContent">Tap to load content</string>
+    <string name="userID">#%d</string>
+    <string name="name">Name:</string>
+    <string name="phoneNumber">Phone:</string>
+    <string name="userName">Username:</string>
+    <string name="webSite">Website:</string>
+    <string name="email">Email:</string>
+    <string name="home">Home</string>
+
 
 </resources>

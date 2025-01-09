@@ -2,7 +2,17 @@
 <resources>
     <string name="app_name">UserInfo</string>
 
-    <string name="failedOpenWhatsApp">Failed to open Whatsapp</string>
-    <string name="failedOpenGoogleMaps">Failed to open google map</string>
+    <string name="failedOpenWhatsApp">فشل في فتح الواتس اب</string>
+    <string name="failedOpenGoogleMaps">فشل في فتح خريطة جوجل</string>
+    <string name="something_went_wrong">حدث خطأ ما</string>
+    <string name="noInternetConnection">لا يوجد اتصال بالإنترنت</string>
+    <string name="tapToLoadContent">انقر لتحميل المحتوى</string>
+    <string name="userID">#%d</string>
+    <string name="name">الاسم:</string>
+    <string name="phoneNumber">رقم الهاتف:</string>
+    <string name="userName">اسم المستخدم:</string>
+    <string name="webSite">الموقع الالكترونى:</string>
+    <string name="email">الايميل:</string>
+    <string name="home">الرئسيه</string>
 
 </resources>
