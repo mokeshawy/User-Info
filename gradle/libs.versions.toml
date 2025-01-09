@@ -71,6 +71,8 @@ koinAndroid = "3.4.0"
 hiltAndroid = "2.52"
 hiltNavigationCompose = "1.2.0"
 
+roomRuntime = "2.6.1"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -188,6 +190,12 @@ hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", ve
 gson = { module = 'com.google.code.gson:gson', version.ref = 'gson' }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+
+# Room
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
 
 [bundles]
 
