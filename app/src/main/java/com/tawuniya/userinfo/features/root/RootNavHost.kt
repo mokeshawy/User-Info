@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.tawuniya.userinfo.features.favorite.favoriteGraph
 import com.tawuniya.userinfo.features.home.HOME_GRAPH_ROUTE
 import com.tawuniya.userinfo.features.home.homeGraph
 
@@ -19,5 +20,7 @@ internal fun RootNavHost(rootController: NavHostController = rememberNavControll
         route = ROOT_NAV_GRAPH
     ) {
         homeGraph(navController = rootController)
+
+        favoriteGraph(navController = rootController)
     }
 }

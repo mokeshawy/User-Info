@@ -1,7 +1,7 @@
 package com.tawuniya.userinfo.features.common.domain.mapper
 
 import com.tawuniya.userinfo.features.common.data.model.UserInfoEntities
-import com.tawuniya.userinfo.features.common.domain.model.UserInfoEntitiesUiModel
+import com.tawuniya.userinfo.features.common.domain.model.ui.UserInfoEntitiesUiModel
 
 
 fun UserInfoEntities.toUserEntitiesUiModel() = UserInfoEntitiesUiModel(
@@ -12,5 +12,6 @@ fun UserInfoEntities.toUserEntitiesUiModel() = UserInfoEntitiesUiModel(
     username = username,
     website = website,
     lat = lat,
-    lng = lng
+    lng = lng,
+    isFavorite = isFavorite
 )
